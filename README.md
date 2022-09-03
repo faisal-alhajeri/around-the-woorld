@@ -8,3 +8,5 @@
 <p>clone the repo in to your own directory</p>
 <p>run <code>npm install</code> to install required packages</p>
 <p>run <code>npm start</code> to start the app</p>
+<br>
+<p>Also, you can try a live version of it on <a href='https://around-the-world-api.herokuapp.com/' >here</a></p>
