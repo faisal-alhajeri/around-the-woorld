@@ -47,7 +47,7 @@ export default function CountryPage({ countries }) {
                                 <h4 className='title'>About
                                     <div className='h-hr title' />
 
-                                </h4>
+                                </h4> 
                                 <p>
                                     Region: {country?.subregion}
                                 </p>
