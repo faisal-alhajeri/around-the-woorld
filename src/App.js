@@ -5,23 +5,15 @@ import './App.css';
 import './bootstrap.min.css'
 import CountriesContainer from './components/CountriesContainer';
 import Navbar from './components/Navbar';
+import useCountries from './hooks/countriesHook';
 import CountryPage from './pages/CountryPage';
 import MainPage from './pages/MainPage';
 
 
-const BASE_URL = 'https://restcountries.com/v3.1/'
 
 function App() {
-  const [countries, setCountries] = useState([])
+  const countries = useCountries()
   
-
-  useEffect(() => {
-    axios.get(BASE_URL + 'all/')
-    .then(res => setCountries(res.data))
-  }, [])
-
-
-
 
   return (
     <>

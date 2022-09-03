@@ -33,6 +33,6 @@ export default function UTCTimer({ utcString }) {
 
 
     return (
-        <div>{utcString} {'=>'} {time.getHours()}:{time.getMinutes()}:{time.getSeconds()}</div>
+        <div>{utcString} {'=>'} {time.getHours()}:{time.getMinutes()}</div>
     )
 }
