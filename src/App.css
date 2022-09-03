@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+@import url('https://css.gg/search.css');
+
+:root {
+  --brown: #D0814E;
+  --brown-l1: #DF9D6C;
+  --brown-l2: #F7D3AA;
+  --brown-l3: blanchedalmond;
+  --brown-d1: #9F7159;
+  --brown-d2: #634739;
+  --white: #ffffff;
+  --carbon: #3E3E40;
+  --carbon-l1: #777378;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0px;
+  background-color:var(--brown-l3) !important;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  color: var(--brown-l2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.main-container {
+  padding-top: 5%;
+  background-color: inherit;
+}
+
+.countries-container{
+  min-height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: rgb(248, 248, 248);
+}
+
+.flag-sm{
+  width: 40px;
+}
+
+.navbar {
+  /* background-color: #d95736; */
+  background-color: var(--carbon);
+  color: var(--brown-l2);
+  height: 100px;
+}
+
+.navbar-heading{
+  font-size: 2rem;
+}
+
+
+.navbar-content{
+  padding: 10px 90px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+}
+
+.navbar-list{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-list-item{
+  display: inline;
+  padding: 10px;
+  font-size: 1.5rem;
   color: white;
+  opacity: 70%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.navbar-list-item:hover{
+  opacity: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+#country-name{
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  width:50%;
+  padding-left: 50px;
+  background-image: url(./magnifying-glass.png);
+  background-position: 10px 2px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+
+}
+
+.hover-bigger:hover{
+  font-weight: 600;
+}
+
+.hover-bigger:hover .flag-sm{
+  font-weight: 500;
+  width: 50px;
+}
+
+.country-flag {
+  color: white;
+  background-color: var(--carbon);
+  /* height: 200px; */
+
+}
+
+.country-flag-info {
+  background-color: var(--carbon-l1);
+  /* height: 200px; */
+  
+}
+
+.country-info {
+  background-color: var(--carbon-l1);
+  color: white;
+  /* height: 200px; */
+  
+}
+
+.country-info-general-info {
+  background-color: var(--carbon);
+  color: white;
+  /* height: 200px; */
+  
+}
+
+.v-hr {
+  height: 150px;
+  align-self: center;
+  width: 1px;
+  background-color: var(--brown-l2);
+  border-radius: 15px;
+  /* margin: 0px 20px; */
+}
+
+.h-hr {
+  height: 1px;
+  width: 25%;
+  background-color: var(--brown-l2);
+  border-radius: 15px;
+  /* margin: 0px 20px; */
+}
+
+.img-container img{
+  width: 100%;
 }
